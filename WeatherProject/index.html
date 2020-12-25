@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+<meta name='viewport' 
+content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+user-scalable=0' >
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-dark"">
+  <a style="margin-left:10px;" class="navbar-brand" href="#">ApolloWeather</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<div id="maincont">
+    <h1 style="color:#B2FF59">
+        WEATHER FINDER
+    </h1>
+
+    <form class="form-control " action="/" method="post" id="formm">
+        <input class="form-control w-75" type="text" name="cityname" placeholder="Enter City Name">
+        <input class="form-control w-75" type="text" name="country" placeholder="Enter Country Name" ><br>
+        <button type="submit" style="margin-top: 1px;" class="btn btn-primary ">Get Weather</button>
+        
+
+
+    </form>
+    <img  id="weatherimg" src="https://static.vecteezy.com/system/resources/previews/000/432/010/original/girl-news-weather-forecast-vector.jpg">
+    <footer style="color:#FAFAFA">Ⓒ ApolloCoding</footer>
+</div>
+
+    <style>
+        #weatherimg{
+            height: 435px;
+        }
+
+        #maincont{
+          
+          text-align: center;
+        }
+
+        body{
+          background-color:  #607D8B;
+        }
+
+        #formm{
+        
+
+         margin: auto;
+          text-align: center;
+        
+        }
+        @media all and (min-width:500px){
+          #formm{
+            width: 470px;
+          }
+
+        }
+     
+         
+       
+    </style>
+
+</body>
+</html>
